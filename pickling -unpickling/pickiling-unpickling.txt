@@ -1,0 +1,49 @@
+Pickling and unpickling are two processes in Python used for object serialization. 
+Serialization is the process of converting an object into a byte stream, which can 
+be stored in a file or transferred over a network. 
+Pickling is the process of converting a Python object into a byte stream, 
+while unpickling is the reverse process of reconstructing the Python object 
+from a byte stream.
+
+Python provides a built-in module called `pickle` for pickling and unpickling objects. 
+Here's how you can use it:
+
+1. Pickling :
+
+   ```python
+   import pickle
+   
+   # Create an object to pickle
+   data = [1, 2, 3, 4, 5]
+   
+   # Open a file in binary mode to write the pickled data
+   with open('data.pickle', 'wb') as file:
+       pickle.dump(data, file)
+   ```
+
+   In the example above, we import the `pickle` module, create a list called `data`, 
+   and then open a file called `data.pickle` in binary write mode (`'wb'`). We use the 
+   `pickle.dump()` function to pickle the `data` object into the file.
+
+
+2. Unpickling :
+
+   ```python
+   import pickle
+   
+   # Open the file in binary mode to read the pickled data
+   with open('data.pickle', 'rb') as file:
+       data = pickle.load(file)
+   
+   print(data)  # Output: [1, 2, 3, 4, 5]
+   ```
+
+   In the unpickling example, we open the `data.pickle` file in binary read mode (`'rb'`) 
+   and use the `pickle.load()` function to load the pickled data from the file. The unpickled 
+   data is stored in the `data` variable, and we print it to verify that the object was successfully 
+   reconstructed.
+
+It's important to note that when pickling and unpickling objects, both the pickling and unpickling operations 
+should be performed using the same version of Python and the same module versions to ensure compatibility. 
+Additionally, unpickling data from an untrusted source can pose security risks, as malicious code could be 
+executed during the unpickling process. Therefore, it's recommended to only unpickle data from trusted sources.
