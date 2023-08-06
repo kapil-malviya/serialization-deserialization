@@ -9,8 +9,6 @@ and explanations related to the concepts of serialization and deserialization in
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Serialization](#serialization)
-- [Deserialization](#deserialization)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
