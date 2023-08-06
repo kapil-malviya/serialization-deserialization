@@ -57,4 +57,4 @@ please open a pull request.
 
 ---
 
-Happy serializing and deserializing! If you have any questions or suggestions, please don't hesitate to [get in touch](mailto:your@email.com).
+Happy serializing and deserializing! 
