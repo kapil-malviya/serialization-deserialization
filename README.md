@@ -55,4 +55,3 @@ please open a pull request.
 
 ---
 
-Happy serializing and deserializing! 
