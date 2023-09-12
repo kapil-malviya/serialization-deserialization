@@ -1,0 +1,23 @@
+Need of jsonpickle module : 
+- in json module dump and load function always works with python dict object
+- we can't convert our object to json directly with the help of json module
+
+
+jsonpickle module :
+
+By using jsonpickle module we can serialize our custom class objects directly
+to json and we can deserialize json to our custom class objects directly
+
+jsonpickle module is not available bydefault & have to install it explicitly
+
+	---$ pip install jsonpickle
+
+It contains following functions :
+- encode() meant for serialization
+- decode() meant for deserialization
+
+Example :
+- encode() : encode function convert our employee object to json directly without 
+    converting employee object into python dictionary.
+- decode() : decode function meant for reverse operation, from json to employee 
+	object directly.
